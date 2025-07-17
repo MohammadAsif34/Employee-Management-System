@@ -54,8 +54,8 @@ const Action = ({ id }) => {
 
   const handleEmpDelete = async () => {
     const res = await EmployeeDeleteAPI(id);
-    if (res.data.status === "OK") {
-      toast.success(res.data.message);
+    if (res?.status === "OK") {
+      toast.success(res?.message);
       setAppKey((p) => p + 1);
     } else {
       toast.error("Something went wrong!");
