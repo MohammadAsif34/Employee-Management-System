@@ -16,7 +16,7 @@ export const login = async (req, res) => {
       res.cookie("emstoken", token, {
         httpOnly: true,
         secure: true,
-        sameSite: "lax",
+        sameSite: "None",
         path: "/",
         maxAge: 24 * 60 * 60 * 1000,
       });
@@ -39,7 +39,7 @@ export const logout = async (req, res) => {
     res.clearCookie("emstoken", {
       httpOnly: true,
       secure: false,
-      smaeSite: "lax",
+      smaeSite: "None",
       path: "/",
       maxAge: 24 * 60 * 60 * 1000,
     });
