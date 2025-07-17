@@ -39,7 +39,7 @@ export const logout = async (req, res) => {
     res.clearCookie("emstoken", {
       httpOnly: true,
       secure: true,
-      smaeSite: "None",
+      sameSite: "None",
       path: "/",
       maxAge: 24 * 60 * 60 * 1000,
     });
