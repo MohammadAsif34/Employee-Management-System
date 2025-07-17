@@ -88,7 +88,7 @@ const CreateEmployeeModal = () => {
 
   return (
     <>
-      <div className="w-full h-[100vh] px-[15%] pt-12 fixed top-0 left-0 overflow-hidden  bg-black/80">
+      <div className="w-full h-[100vh] px-[15%] pt-12 fixed top-0 left-0 overflow-hidden  bg-black/80 z-50">
         <div className="w-full h-[90vh] overflow-hidden rounded-xl scroll-smooth relative">
           <button
             className="absolute top-4 right-8 bg-neutral-800 border border-neutral-700 rounded-full px-2 py-1 cursor-pointer"
