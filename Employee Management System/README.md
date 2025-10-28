@@ -35,7 +35,7 @@ Version Control: Git & GitHub
 
 
 ## ⚙️ Installation & Setup
-
+```
 1. Clone the repository  
    git clone https://github.com/your-username/Employee-Management-System.git
 
@@ -57,6 +57,7 @@ Version Control: Git & GitHub
 6. Start the frontend  
    cd ../frontend  
    npm start
+```
 
 By default:  
 Backend → http://localhost:5000  
