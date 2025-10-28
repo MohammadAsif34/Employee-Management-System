@@ -1,4 +1,4 @@
-x`# 👨‍💼 Employee Management System
+# 👨‍💼 Employee Management System
 
 The **Employee Management System** is a web-based application designed to manage employee data efficiently.  
 It provides features for adding, updating, deleting, and viewing employee records, ensuring a smooth HR and administrative workflow.
