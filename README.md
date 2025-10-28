@@ -61,9 +61,9 @@ Frontend will start on http://localhost:3000
 ## 🧑‍💻 Author
 
 ### Mohammad Asif
-Portfolio: https://mohammadasifhasnain.vercel.app
-LinkedIn: https://linkedin.com/in/mohammadasifhasnain
-GitHub: https://github.com/mohammadasifhasnain
+Portfolio: https://mohammadasifhasnain.vercel.app    
+LinkedIn: https://linkedin.com/in/mohammadasifhasnain    
+GitHub: https://github.com/mohammadasifhasnain    
 
 ---
 
