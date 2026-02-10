@@ -7,7 +7,7 @@ import PageNotFound from "./pages/PageNotFound";
 const App = () => {
   return (
     <>
-      <main className="w">
+      <main className=" bg-gray-950">
         <BrowserRouter>
           <Routes>
             <Route path="/*" element={<PrivateRoutes />} />

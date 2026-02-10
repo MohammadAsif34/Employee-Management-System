@@ -1,10 +1,10 @@
 import React from "react";
 
 import EmpList from "../components/dashboard/EmpList";
-import AdminNavbar from "../components/AdminNavbar";
-import ReadEmpModal from "../components/modal/ReadEmpModal";
-import CreateEmpModal from "../components/modal/CreateEmpModal";
-import UpdateEmpModal from "../components/modal/UpdateEmpModal";
+// import AdminNavbar from "../components/AdminNavbar";
+// import ReadEmpModal from "../components/modal/ReadEmpModal";
+// import CreateEmpModal from "../components/modal/CreateEmpModal";
+// import UpdateEmpModal from "../components/modal/UpdateEmpModal";
 import { useModal, useUser } from "../context/createContext";
 import LoginModal from "../components/modal/LoginModal";
 // const [isCreate , setIsCreate] = useState(false)
@@ -12,7 +12,10 @@ import LoginModal from "../components/modal/LoginModal";
 const Dashboard = () => {
   const { isCreateEmp, isReadEmp, isUpdateEmp } = useModal();
   const { user } = useUser();
-  console.log(user);
+  console.log("USER", user);
+
+  if (!user.isAuthenticated) return <div className="w-full h-[90vh] flex justify-center items-center"> No User Logined!</div>;
+
   return (
     <div className="w-full px-[10%] max-sm:px-[5%] ">
       {user.isAuthenticated && <LoginModal />}
@@ -40,7 +43,7 @@ const Dashboard = () => {
           Admin Dashboard
         </h1>
         {/* admin navbar  */}
-        <AdminNavbar />
+        {/* <AdminNavbar /> */}
         <div className="w-full h-full py-5">
           <EmpList />
         </div>

@@ -1,26 +1,36 @@
 import React, { useState } from "react";
 import { useModal, useUser } from "../context/createContext";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isPop, setIsPop] = useState(false);
   return (
     <>
       <header className="w-full h-16 px-[10%] bg-color-1 flex justify-between items-center">
-        <div className="">
-          <h1 className="text-4xl font-serif">EMP</h1>
-        </div>
+        <Link to={"/"} className="">
+          <h1 className="text-4xl font-serif">EMS</h1>
+        </Link>
 
         <div className="relative">
-          <div
-            className="w-10 h-10 rounded-full overflow-hidden cursor-pointer"
-            onClick={() => setIsPop(!isPop)}
-          >
-            <img
-              src="/logo.png"
-              alt=""
-              className="w-full h-full object-center object-cover"
-            />
-          </div>
+          {false ? (
+            <div
+              className="w-10 h-10 rounded-full overflow-hidden cursor-pointer"
+              onClick={() => setIsPop(!isPop)}
+            >
+              <img
+                src="/logo.png"
+                alt=""
+                className="w-full h-full object-center object-cover"
+              />
+            </div>
+          ) : (
+            <Link
+              to={"/auth/login"}
+              className="border px-4 py-2 rounded-md hover:bg-white hover:text-indigo-500"
+            >
+              Login
+            </Link>
+          )}
           {isPop && <AvatarPopDown />}
         </div>
       </header>

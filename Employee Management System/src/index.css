@@ -16,7 +16,7 @@
 }
 
 .bg-color-1 {
-  @apply bg-gradient-to-tl from-violet-700 to-purple-700;
+  @apply bg-gradient-to-tl from-violet-500 to-purple-500;
 }
 .tech-stack {
   @apply px-4 py-0.5  rounded-md;

@@ -20,7 +20,7 @@ const LoginModal = () => {
       const res = await axios.post(
         api,
         { form },
-        { headers: { Authorization: `Bearer ${token}` } }
+        { headers: { Authorization: `Bearer ${token}` } },
       );
       if (res.data?.status == "OK") {
         setUser({ isAuthenticated: true, user: res?.data?.user });

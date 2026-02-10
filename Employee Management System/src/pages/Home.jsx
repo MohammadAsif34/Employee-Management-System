@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div className="w-full px-[10%] max-sm:pax-[5%] ">
+      <div className="w-full px-[10%] max-sm:pax-[5%] bg-gray-950 ">
         {/* hero section  */}
-        <section className="min-h-[60vh] flex ">
+        <section className="min-h-[60vh] flex b">
           <div className="flex-1 flex flex-col items-center justify-center">
             <h1 className="py-12 text-center text-9xl font-bold text-transparent bg-clip-text bg-color-1 font-serif">
               EMS
